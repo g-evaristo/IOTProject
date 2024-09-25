@@ -12,7 +12,7 @@ quando chamar localhost:3080/api
 ele abre o /rotas/index.js*/
 const api = require("./rotas/");
 app.use("/api", api);
-const port = 3080;
+const port = process.env.PORT;
 
 //rota raiz
 app.get("/", (req, res) => {
